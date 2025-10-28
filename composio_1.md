@@ -1,6 +1,6 @@
 # Description
 
-The server code in [Composio master branch](https://github.com/ComposioHQ/composio/blob/master/python/composio/server/api.py#L278) exposes a GET endpoint at /api/download that is intended to serve files from the server. The endpoint takes a file query parameter which specifies the path to the desired file.
+The server code in [Composio master branch](https://github.com/ComposioHQ/composio/blob/47df30bd4de54c9bfc69f07987bc1b549d86c6f3/python/composio/server/api.py#L278) exposes a GET endpoint at /api/download that is intended to serve files from the server. The endpoint takes a file query parameter which specifies the path to the desired file.
 
 The Path(file) operation does not sanitize the user-provided file path. An attacker can use path traversal sequences (e.g., ../) or an absolute path to navigate outside of the intended directory and access any file on the server's filesystem that the application has read permissions for.
 
