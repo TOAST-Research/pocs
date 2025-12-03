@@ -1,10 +1,17 @@
 [CVE ID]
+
 CVE-2025-56427
+
 [PRODUCT]
+
 Composio
+
 [VERSION]
+
 v0.6.10 (Commit 9be17a8) Master Branch
+
 [PROBLEM TYPE]
+
 Remote DoS
 
 

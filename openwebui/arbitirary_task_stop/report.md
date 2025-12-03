@@ -1,10 +1,17 @@
 [CVE ID]
+
 CVE-2025-63681
+
 [PRODUCT]
+
 Open-WebUI
+
 [VERSION]
+
 0.6.41
+
 [PROBLEM TYPE]
+
 Remote DoS
 
 # Description
