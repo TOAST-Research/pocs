@@ -1,3 +1,13 @@
+[CVE ID]
+CVE-2025-56427
+[PRODUCT]
+Composio
+[VERSION]
+v0.6.10 (Commit 9be17a8) Master Branch
+[PROBLEM TYPE]
+Remote DoS
+
+
 # Description
 
 The server code in [Composio master branch](https://github.com/ComposioHQ/composio/blob/47df30bd4de54c9bfc69f07987bc1b549d86c6f3/python/composio/server/api.py#L278) exposes a GET endpoint at /api/download that is intended to serve files from the server. The endpoint takes a file query parameter which specifies the path to the desired file.

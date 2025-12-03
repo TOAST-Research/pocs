@@ -1,3 +1,12 @@
+[CVE ID]
+CVE-2025-63681
+[PRODUCT]
+Open-WebUI
+[VERSION]
+0.6.41
+[PROBLEM TYPE]
+Remote DoS
+
 # Description
 
 The OpenWebUI server exposes an unprotected endpoint at /api/tasks/stop/{task_id} that cancels an LLM task. The endpoint accepts a task ID from the client and cancels the task without checking whether the requester actually owns the task or has the required permissions to stop it.
